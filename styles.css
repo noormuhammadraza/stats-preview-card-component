@@ -71,17 +71,21 @@ body {
 }
 
 .component-text-container {
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .component-main-text {
   margin-bottom: 3em;
+  padding: 0 2em;
 }
 
 .component-title {
-  font-weight: var(--fw-700);
+  font-weight: 600;
   text-align: center;
-  padding: 0 0.1em;
+  font-size: 1.9rem;
+  margin-bottom: 0.6em;
+  line-height: 1.15em;
+  padding: 0 1px;
 }
 
 .component-title span {
@@ -91,5 +95,30 @@ body {
 .component-description {
   color: var(--main-paragraph);
   text-align: center;
-  font-size: 1.01rem;
+  font-size: 1.05rem;
+  padding: 0 0.5em;
+}
+
+.component-stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.stat-number {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.15em;
+}
+
+.stat-name {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--stat-heading);
+  letter-spacing: 0.15em;
+  font-family: var(--ff-lexenda);
+  font-size: 0.8rem;
+  font-weight: 200;
 }
